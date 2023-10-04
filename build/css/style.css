@@ -1249,6 +1249,11 @@ button,
   padding-top: 30px;
   padding-bottom: 35px;
 }
+@media (max-width: 1023px) {
+  .header {
+    padding-top: 20px;
+  }
+}
 
 .header__inner {
   display: -webkit-box;
@@ -1273,6 +1278,7 @@ button,
   color: #f2f5f6;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  margin-bottom: 7px;
 }
 @media (hover: hover) {
   .header__link:hover:not(.focus-visible) {
@@ -1285,11 +1291,26 @@ button,
 .header__link--email {
   min-width: 225px;
   margin-right: 27px;
-  margin-bottom: 7px;
+}
+@media (max-width: 1023px) {
+  .header__link--email {
+    min-width: auto;
+  }
 }
 .header__link--phone {
   margin-right: 166px;
-  margin-bottom: 7px;
+}
+@media (max-width: 1023px) {
+  .header__link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    margin-bottom: 17px;
+    margin-right: 20px;
+  }
 }
 
 .header__link svg {
@@ -1297,10 +1318,20 @@ button,
       flex-shrink: 0;
   margin-right: 15px;
 }
+@media (max-width: 1023px) {
+  .header__link svg {
+    margin-right: 0;
+  }
+}
 
 .header__btn {
   margin-bottom: 7px;
   padding: 11px 16px;
+}
+@media (max-width: 1023px) {
+  .header__btn {
+    display: none;
+  }
 }
 
 .logo {
@@ -1309,6 +1340,11 @@ button,
 }
 .logo--header {
   margin-right: 160px;
+}
+@media (max-width: 1023px) {
+  .logo--header {
+    margin-right: auto;
+  }
 }
 
 /* @mixin hover-focus {
