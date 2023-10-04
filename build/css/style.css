@@ -1416,7 +1416,7 @@ button,
 }
 
 .main-menu__item {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .main-menu__item:last-child {
   margin-bottom: 0;
@@ -1430,12 +1430,12 @@ button,
   font-weight: 400;
 }
 .footer__link--menu {
-  line-height: 135%;
+  line-height: 22px;
 }
 .footer__link--phone {
   display: block;
-  line-height: 25px;
-  margin-bottom: 3px;
+  line-height: 24px;
+  margin-bottom: 6px;
 }
 
 .footer__block--contact {
