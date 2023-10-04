@@ -4,6 +4,10 @@
   &--header {
     margin-right: 160px;
 
+    @include vp-1439 {
+      margin-right: 30px;
+    }
+
     @include vp-1023 {
       margin-right: auto;
     }

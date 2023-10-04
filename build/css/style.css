@@ -1292,13 +1292,24 @@ button,
   min-width: 225px;
   margin-right: 27px;
 }
+@media (max-width: 1439px) {
+  .header__link--email {
+    margin-left: auto;
+  }
+}
 @media (max-width: 1023px) {
   .header__link--email {
+    margin-left: 0;
     min-width: auto;
   }
 }
 .header__link--phone {
   margin-right: 166px;
+}
+@media (max-width: 1439px) {
+  .header__link--phone {
+    margin-right: auto;
+  }
 }
 @media (max-width: 1023px) {
   .header__link {
@@ -1340,6 +1351,11 @@ button,
 }
 .logo--header {
   margin-right: 160px;
+}
+@media (max-width: 1439px) {
+  .logo--header {
+    margin-right: 30px;
+  }
 }
 @media (max-width: 1023px) {
   .logo--header {

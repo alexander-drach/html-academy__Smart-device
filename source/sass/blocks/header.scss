@@ -43,13 +43,22 @@
 
     margin-right: 27px;
 
+    @include vp-1439 {
+      margin-left: auto;
+    }
+
     @include vp-1023 {
+      margin-left: 0;
       min-width: auto;
     }
   }
 
   &--phone {
     margin-right: 166px;
+
+    @include vp-1439 {
+      margin-right: auto;
+    }
   }
 
   @include vp-1023 {
