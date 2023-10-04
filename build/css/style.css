@@ -1254,6 +1254,12 @@ button,
     padding-top: 20px;
   }
 }
+@media (max-width: 767px) {
+  .header {
+    padding-top: 12px;
+    margin-left: 1px;
+  }
+}
 
 .header__inner {
   display: -webkit-box;
@@ -1321,6 +1327,12 @@ button,
     font-size: 0;
     margin-bottom: 17px;
     margin-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .header__link {
+    margin-bottom: 0;
+    margin-right: 15px;
   }
 }
 
