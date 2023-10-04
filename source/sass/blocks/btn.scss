@@ -48,6 +48,11 @@
     color: $color-default-white;
   }
 
+  &--blue {
+    background-color: $color-primary-blue;
+    color: $color-primary-white;
+  }
+
   &--transparent {
     background-color: $color-transparent;
 
