@@ -3,16 +3,20 @@
   padding: 10px 20px;
 
   color: $color-default-white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  font-family: $ff-roboto;
+  border: 1px solid $color-transparent;
 
-  background-color: $color-neon-blue;
+  background-color: $color-primary-blue;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
 
-  transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
+  transition: all $trans-default;
 
   &:disabled {
     opacity: 0.5;
@@ -22,5 +26,43 @@
 
   @include hover-focus {
     opacity: 0.8;
+  }
+
+  &--fz-14 {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+  }
+
+  &--fz-16 {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+
+  &--fz-18 {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+
+  &--dark {
+    background-color: $color-primary-black;
+    color: $color-default-white;
+  }
+
+  &--transparent {
+    background-color: $color-transparent;
+
+    @include hover-focus {
+      color: $color-primary-blue;
+      border: 1px solid $color-primary-blue;
+    }
+  }
+
+  &--transparent-white {
+    border: 1px solid $color-default-white;
+  }
+
+  &--transparent-blue {
+    color: $color-primary-blue;
+    border: 1px solid $color-primary-blue;
   }
 }

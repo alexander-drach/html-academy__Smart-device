@@ -9,13 +9,15 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
-
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-primary-black:               #041427;
+$color-primary-black-opacity:       rgba(4, 24, 39, 0.50);
+$color-primary-white:               #f2f5f6;
+$color-white-opacity:               rgba(255, 255, 255, 0.70);
+$color-primary-blue:                #00b2ff;
 
 // Gradient
 
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$top-to-bottom:                    linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 
 // Typography
 // ---------------------------------
@@ -25,7 +27,7 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-PTmono:                         "PT Mono", "Arial", sans-serif;
+$ff-PTmono:                    "PT Mono", "Courier New", monospace;
 
 $ff-roboto:                    "Roboto Condensed", "Arial", sans-serif;
 

@@ -357,7 +357,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: "PT Mono", "Courier New", monospace;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -479,9 +479,8 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
-  /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  padding-top: 120px;
 }
 .wrapper .header,
 .wrapper .footer {
@@ -492,14 +491,6 @@ button,
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-}
-
-.rouble {
-  font-family: "PT Mono", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
 }
 
 .visually-hidden {
@@ -533,35 +524,19 @@ button,
   display: none;
 }
 
-.no-transition {
-  /* stylelint-disable-next-line */
-  -webkit-transition: none !important;
-  transition: none !important;
-}
-
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 40px;
-}
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
-  }
+  padding: 0 50px;
 }
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 25px;
   }
 }
 
@@ -571,14 +546,19 @@ button,
   display: inline-flex;
   padding: 10px 20px;
   color: #ffffff;
-  background-color: #2c39f2;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: #00b2ff;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-.btn--red {
-  background-color: #ff1553;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .btn:disabled {
   opacity: 0.5;
@@ -591,6 +571,42 @@ button,
 }
 .btn.focus-visible:focus {
   opacity: 0.8;
+}
+.btn--fz-14 {
+  font-size: 14px;
+  letter-spacing: 0.7px;
+}
+.btn--fz-16 {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+}
+.btn--fz-18 {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+}
+.btn--dark {
+  background-color: #041427;
+  color: #ffffff;
+}
+.btn--transparent {
+  background-color: rgba(255, 255, 255, 0);
+}
+@media (hover: hover) {
+  .btn--transparent:hover:not(.focus-visible) {
+    color: #00b2ff;
+    border: 1px solid #00b2ff;
+  }
+}
+.btn--transparent.focus-visible:focus {
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
+}
+.btn--transparent-white {
+  border: 1px solid #ffffff;
+}
+.btn--transparent-blue {
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
 }
 
 .modal {
@@ -1221,6 +1237,78 @@ button,
 }
 .custom-select .input-message.is-valid {
   color: #15ab07;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f2f5f6;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+@media (hover: hover) {
+  .header__link:hover:not(.focus-visible) {
+    color: #00b2ff;
+  }
+}
+.header__link.focus-visible:focus {
+  color: #00b2ff;
+}
+.header__link--email {
+  min-width: 225px;
+  margin-right: 27px;
+  margin-bottom: 7px;
+}
+.header__link--phone {
+  margin-right: 166px;
+  margin-bottom: 7px;
+}
+
+.header__link svg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.header__btn {
+  margin-bottom: 7px;
+  padding: 11px 16px;
+}
+
+.logo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.logo--header {
+  margin-right: 160px;
 }
 
 /* @mixin hover-focus {

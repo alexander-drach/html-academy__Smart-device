@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+
+  background: $top-to-bottom;
+
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: $color-primary-white;
+  transition: color $trans-default;
+
+  @include hover-focus {
+    color: $color-primary-blue;
+  }
+
+  &--email {
+    min-width: 225px;
+
+    margin-right: 27px;
+    margin-bottom: 7px;
+  }
+
+  &--phone {
+    margin-right: 166px;
+    margin-bottom: 7px;
+  }
+}
+
+.header__link svg {
+  flex-shrink: 0;
+
+  margin-right: 15px;
+}
+
+.header__btn {
+  margin-bottom: 7px;
+  padding: 11px 16px;
+}
