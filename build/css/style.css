@@ -1610,6 +1610,11 @@ button,
   padding-top: 120px;
   padding-bottom: 120px;
 }
+@media (max-width: 1023px) {
+  .features {
+    padding-top: 80px;
+  }
+}
 
 .features__list {
   display: -webkit-box;
@@ -1632,6 +1637,11 @@ button,
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
 }
+@media (max-width: 1023px) {
+  .features__item {
+    padding: 40px 45px 31px 36px;
+  }
+}
 
 .features__item svg {
   width: 35px;
@@ -1641,6 +1651,11 @@ button,
 
 .features__icon {
   margin-bottom: 14px;
+}
+@media (max-width: 1023px) {
+  .features__icon {
+    margin-bottom: 9px;
+  }
 }
 
 .features__title {
@@ -1653,6 +1668,11 @@ button,
   font-weight: 400;
   line-height: 33.6px;
 }
+@media (max-width: 1023px) {
+  .features__title {
+    margin-bottom: 8px;
+  }
+}
 
 .features__desc {
   min-height: 120px;
@@ -1661,6 +1681,11 @@ button,
   font-style: normal;
   font-weight: 400;
   line-height: 21.6px;
+}
+@media (max-width: 1023px) {
+  .features__desc {
+    min-height: 160px;
+  }
 }
 
 .logo {
