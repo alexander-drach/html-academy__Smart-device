@@ -10,7 +10,9 @@
   }
 
   .accordeon__toggle--minus {
-    display: block;
+    @include vp-767 {
+      display: block;
+    }
   }
 
   .accordeon__content {

@@ -1792,8 +1792,10 @@ button,
 .accordeon.open .accordeon__toggle--plus {
   display: none;
 }
-.accordeon.open .accordeon__toggle--minus {
-  display: block;
+@media (max-width: 767px) {
+  .accordeon.open .accordeon__toggle--minus {
+    display: block;
+  }
 }
 @media (max-width: 767px) {
   .accordeon.open .accordeon__content {
