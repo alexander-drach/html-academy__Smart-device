@@ -1,0 +1,51 @@
+.accordeon {
+  .accordeon__toggle--minus {
+    display: none;
+  }
+}
+
+.accordeon.open {
+  .accordeon__toggle--plus {
+    display: none;
+  }
+
+  .accordeon__toggle--minus {
+    display: block;
+  }
+
+  .accordeon__content {
+    @include vp-767 {
+      display: block;
+    }
+  }
+}
+
+.accordeon__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.accordeon__toggle {
+  display: none;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+
+  padding: 0;
+
+  border: none;
+
+  background-color: transparent;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.accordeon__content {
+  @include vp-767 {
+    display: none;
+  }
+}

@@ -1367,6 +1367,19 @@ button,
   padding-bottom: 55px;
   color: rgba(255, 255, 255, 0.7);
 }
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .footer__inner {
   display: -webkit-box;
@@ -1416,8 +1429,7 @@ button,
   letter-spacing: 0.75px;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .footer__block--menu {
@@ -1432,8 +1444,19 @@ button,
 }
 @media (max-width: 1023px) {
   .footer__block--menu {
+    padding-top: 0;
     margin-top: 0;
     margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer__block--menu {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -1494,6 +1517,22 @@ button,
 @media (max-width: 1023px) {
   .footer__block--contact {
     margin-left: 0;
+    padding-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer__block--contact {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__block {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -1744,6 +1783,57 @@ button,
 }
 .social__link:last-child {
   margin-right: 0;
+}
+
+.accordeon .accordeon__toggle--minus {
+  display: none;
+}
+
+.accordeon.open .accordeon__toggle--plus {
+  display: none;
+}
+.accordeon.open .accordeon__toggle--minus {
+  display: block;
+}
+@media (max-width: 767px) {
+  .accordeon.open .accordeon__content {
+    display: block;
+  }
+}
+
+.accordeon__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.accordeon__toggle {
+  display: none;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+@media (max-width: 767px) {
+  .accordeon__toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordeon__content {
+    display: none;
+  }
 }
 
 /* @mixin hover-focus {
