@@ -1419,6 +1419,17 @@ button,
     margin-bottom: 35px;
   }
 }
+@media (max-width: 767px) {
+  .footer__block--logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 .footer__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1558,6 +1569,13 @@ button,
     background-image: url("../img/bg/bg-hero-tablet.png");
   }
 }
+@media (max-width: 767px) {
+  .intro {
+    padding-top: 151px;
+    padding-bottom: 190px;
+    background-image: url("../img/bg/bg-hero-mobile.png");
+  }
+}
 .intro::before {
   content: "";
   display: block;
@@ -1584,12 +1602,6 @@ button,
   margin-right: auto;
   z-index: 1;
 }
-@media (max-width: 1023px) {
-  .intro__inner {
-    font-size: 64px;
-    letter-spacing: 4.48px;
-  }
-}
 @media (max-width: 767px) {
   .intro__inner {
     padding: 0 25px;
@@ -1614,6 +1626,13 @@ button,
     margin-bottom: 0;
   }
 }
+@media (max-width: 767px) {
+  .intro__title {
+    font-size: 36px;
+    letter-spacing: 2.52px;
+    margin-bottom: 7px;
+  }
+}
 
 .intro__desc {
   max-width: 685px;
@@ -1628,6 +1647,13 @@ button,
     margin-bottom: 56px;
   }
 }
+@media (max-width: 767px) {
+  .intro__desc {
+    font-size: 14px;
+    line-height: 155%;
+    margin-bottom: 45px;
+  }
+}
 
 .intro__desc p {
   margin-top: 0;
@@ -1638,10 +1664,22 @@ button,
 
 .intro__btn {
   padding: 17px 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1023px) {
   .intro__btn {
     margin-left: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__btn {
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    padding: 12px 37px;
+    margin-left: 0;
   }
 }
 
@@ -1679,6 +1717,11 @@ button,
 @media (max-width: 1023px) {
   .features__item {
     padding: 40px 45px 31px 36px;
+  }
+}
+@media (max-width: 767px) {
+  .features__item {
+    width: 100%;
   }
 }
 

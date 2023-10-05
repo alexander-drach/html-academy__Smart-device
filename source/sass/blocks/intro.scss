@@ -16,6 +16,13 @@
     background-image: url("../img/bg/bg-hero-tablet.png");
   }
 
+  @include vp-767 {
+    padding-top: 151px;
+    padding-bottom: 190px;
+
+    background-image: url("../img/bg/bg-hero-mobile.png");
+  }
+
   &::before {
     content: "";
     display: block;
@@ -46,11 +53,6 @@
 
   z-index: 1;
 
-  @include vp-1023 {
-    font-size: 64px;
-    letter-spacing: 4.48px;
-  }
-
   @include vp-767 {
     padding: 0 25px;
   }
@@ -74,6 +76,13 @@
 
     margin-bottom: 0;
   }
+
+  @include vp-767 {
+    font-size: 36px;
+    letter-spacing: 2.52px;
+
+    margin-bottom: 7px;
+  }
 }
 
 .intro__desc {
@@ -89,6 +98,13 @@
   @include vp-1023 {
     margin-bottom: 56px;
   }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 155%;
+
+    margin-bottom: 45px;
+  }
 }
 
 .intro__desc p {
@@ -101,8 +117,19 @@
 
 .intro__btn {
   padding: 17px 28px;
+  justify-content: center;
 
   @include vp-1023 {
     margin-left: 44px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+
+    font-size: 14px;
+    letter-spacing: 0.7px;
+
+    padding: 12px 37px;
+    margin-left: 0;
   }
 }
