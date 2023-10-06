@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {accordeon} from './modules/accordeon/accordeon';
 import {intro} from './modules/intro/intro';
+import {showFullTextAbout} from './modules/about/show-full-text-about';
 
 // ---------------------------------
 
@@ -14,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   accordeon();
   intro();
+  showFullTextAbout();
 
   // Modules
   // ---------------------------------

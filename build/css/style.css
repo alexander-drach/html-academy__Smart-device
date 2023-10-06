@@ -1624,6 +1624,11 @@ button,
 
 .about__full-text {
   display: none;
+  margin-bottom: 20px;
+}
+
+.about.open .about__full-text {
+  display: block;
 }
 
 .about__btn {
