@@ -1692,6 +1692,11 @@ button,
     padding-top: 80px;
   }
 }
+@media (max-width: 767px) {
+  .features {
+    padding-top: 50px;
+  }
+}
 
 .features__list {
   display: -webkit-box;
@@ -1707,36 +1712,59 @@ button,
 
 .features__item {
   width: calc(50% - 30px);
+  min-height: 300px;
   padding: 40px 45px 35px 41px;
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 30px;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 @media (max-width: 1023px) {
   .features__item {
+    min-height: 360px;
     padding: 40px 45px 31px 36px;
   }
 }
 @media (max-width: 767px) {
   .features__item {
     width: 100%;
+    padding: 29px 45px 35px 24px;
   }
 }
 
-.features__item svg {
-  width: 35px;
-  height: 35px;
-  fill: #00b2ff;
+.features__item:hover {
+  background-color: #00b2ff;
+  border: 1px solid #00b2ff;
+  border-left: 5px solid #00b2ff;
+}
+.features__item:hover .features__title,
+.features__item:hover .features__desc {
+  color: #f2f5f6;
+}
+.features__item:hover .features__icon {
+  fill: #f2f5f6;
 }
 
 .features__icon {
   margin-bottom: 14px;
+  width: 35px;
+  height: 35px;
+  fill: #00b2ff;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
 }
 @media (max-width: 1023px) {
   .features__icon {
     margin-bottom: 9px;
+  }
+}
+@media (max-width: 767px) {
+  .features__icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -1749,24 +1777,35 @@ button,
   font-style: normal;
   font-weight: 400;
   line-height: 33.6px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 @media (max-width: 1023px) {
   .features__title {
     margin-bottom: 8px;
   }
 }
+@media (max-width: 767px) {
+  .features__title {
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 9px;
+  }
+}
 
 .features__desc {
-  min-height: 120px;
   color: #041427;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21.6px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .features__desc {
-    min-height: 160px;
+    font-size: 14px;
+    line-height: 135%;
   }
 }
 

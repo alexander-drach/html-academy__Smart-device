@@ -5,6 +5,10 @@
   @include vp-1023 {
     padding-top: 80px;
   }
+
+  @include vp-767 {
+    padding-top: 50px;
+  }
 }
 
 .features__list {
@@ -21,6 +25,7 @@
 
 .features__item {
   width: calc(50% - 30px);
+  min-height: 300px;
 
   padding: 40px 45px 35px 41px;
   margin-left: 15px;
@@ -30,27 +35,54 @@
   border: 1px solid $color-grey;
   border-left: 5px solid $color-primary-blue;
 
+  transition: background-color $trans-default;
+
   @include vp-1023 {
+    min-height: 360px;
+
     padding: 40px 45px 31px 36px;
   }
 
   @include vp-767 {
     width: 100%;
+
+    padding: 29px 45px 35px 24px;
   }
 }
 
-.features__item svg {
-  width: 35px;
-  height: 35px;
+.features__item:hover {
+  background-color: $color-primary-blue;
 
-  fill: $color-primary-blue;
+  border: 1px solid $color-primary-blue;
+  border-left: 5px solid $color-primary-blue;
+
+  .features__title,
+  .features__desc {
+    color: $color-primary-white;
+  }
+
+  .features__icon {
+    fill: $color-primary-white;
+  }
 }
 
 .features__icon {
   margin-bottom: 14px;
 
+  width: 35px;
+  height: 35px;
+
+  fill: $color-primary-blue;
+
+  transition: fill $trans-default;
+
   @include vp-1023 {
     margin-bottom: 9px;
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -65,21 +97,31 @@
   font-weight: 400;
   line-height: 33.6px;
 
+  transition: color $trans-default;
+
   @include vp-1023 {
     margin-bottom: 8px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 140%;
+
+    margin-bottom: 9px;
   }
 }
 
 .features__desc {
-  min-height: 120px;
-
   color: $color-primary-black;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21.6px;
 
-  @include vp-1023 {
-    min-height: 160px;
+  transition: color $trans-default;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 135%;
   }
 }
