@@ -13,6 +13,11 @@
 
 .about__year {
   width: 250px;
+
+  @include vp-1023 {
+    width: 177px;
+    padding-top: 4px;
+  }
 }
 
 .about__content {
@@ -25,6 +30,10 @@
   font-weight: 400;
   line-height: 134.4%;
   margin-bottom: 40px;
+
+  @include vp-1023 {
+    margin-bottom: -2px;
+   }
 }
 
 
@@ -34,6 +43,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include vp-1023 {
+   margin-bottom: 21px;
   }
 }
 

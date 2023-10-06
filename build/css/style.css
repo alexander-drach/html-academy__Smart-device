@@ -1437,6 +1437,7 @@ button,
 @media (max-width: 1023px) {
   .features {
     padding-top: 80px;
+    padding-bottom: 16px;
   }
 }
 @media (max-width: 767px) {
@@ -1582,6 +1583,12 @@ button,
 .about__year {
   width: 250px;
 }
+@media (max-width: 1023px) {
+  .about__year {
+    width: 177px;
+    padding-top: 4px;
+  }
+}
 
 .about__content {
   -webkit-box-flex: 1;
@@ -1596,6 +1603,11 @@ button,
   line-height: 134.4%;
   margin-bottom: 40px;
 }
+@media (max-width: 1023px) {
+  .about__desc {
+    margin-bottom: -2px;
+  }
+}
 
 .about__desc p {
   margin-top: 0;
@@ -1603,6 +1615,11 @@ button,
 }
 .about__desc p:last-child {
   margin-bottom: 0;
+}
+@media (max-width: 1023px) {
+  .about__desc p {
+    margin-bottom: 21px;
+  }
 }
 
 .about__full-text {
