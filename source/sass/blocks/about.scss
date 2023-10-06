@@ -1,7 +1,47 @@
 .about {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
 
+.about .section-title {
+  margin-bottom: 13px;
 }
 
 .about__inner {
   display: flex;
+}
+
+.about__year {
+  width: 250px;
+}
+
+.about__content {
+  flex: 1;
+}
+
+.about__desc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 134.4%;
+  margin-bottom: 40px;
+}
+
+
+.about__desc p {
+  margin-top: 0;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about__full-text {
+  display: none;
+}
+
+.about__btn {
+  min-width: 180px;
+  padding: 13px 25px;
 }
