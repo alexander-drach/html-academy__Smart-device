@@ -51,13 +51,19 @@
   &--blue {
     background-color: $color-primary-blue;
     color: $color-primary-white;
+
+    @include hover-focus {
+      background-color: $color-primary-white;
+      color: $color-primary-blue;
+    }
   }
 
   &--transparent {
     background-color: $color-transparent;
 
     @include hover-focus {
-      color: $color-primary-blue;
+      background-color: $color-primary-blue;
+      color: $color-primary-white;
       border: 1px solid $color-primary-blue;
     }
   }
