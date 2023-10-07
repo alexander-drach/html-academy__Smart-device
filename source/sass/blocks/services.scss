@@ -5,10 +5,18 @@
 
   padding-top: 66px;
   padding-bottom: 90px;
+
+  @include vp-1023 {
+    padding-top: 58px;
+  }
 }
 
 .services .section-title {
   margin-bottom: 52px;
+
+  @include vp-1023 {
+    margin-bottom: 39px;
+  }
 }
 
 .services__list {
@@ -17,19 +25,38 @@
   padding-left: 0;
   margin: 0 -42px;
 
-  overflow: hidden;
+  overflow-x: hidden;
 
   list-style-type: none;
+
+  @include vp-1023 {
+    flex-wrap: wrap;
+  }
+
+  @include vp-374 {
+    margin: 0;
+  }
 }
 
 .services__item {
   position: relative;
-  width: calc(100% /3 - 84px);
+  width: calc(100% / 3 - 84px);
 
   margin-left: 42px;
   margin-right: 42px;
 
   background-color: $color-primary-black-opacity;
+
+  @include vp-1023 {
+    width: max-content;
+
+    margin-bottom: 30px;
+  }
+
+  @include vp-374 {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .services__link {
@@ -66,7 +93,7 @@
   left: 40px;
   top: 49px;
 
-  max-width: 173px;
+  max-width: 230px;
 
   font-family: $ff-roboto;
   font-size: 20px;
@@ -77,6 +104,19 @@
   margin: 0;
 
   z-index: 2;
+
+  @include vp-1023 {
+    left: 45px;
+    top: 36px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+  }
+}
+
+.services__thumb {
+  object-fit: fill;
 }
 
 .services__icon {
