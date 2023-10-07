@@ -1,6 +1,10 @@
 .about {
   padding-top: 30px;
   padding-bottom: 100px;
+
+  @include vp-1023 {
+    padding-bottom: 80px;
+  }
 }
 
 .about .section-title {
@@ -18,6 +22,10 @@
     width: 177px;
     padding-top: 4px;
   }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .about__content {
@@ -33,7 +41,11 @@
 
   @include vp-1023 {
     margin-bottom: -2px;
-   }
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
 }
 
 
@@ -46,13 +58,13 @@
   }
 
   @include vp-1023 {
-   margin-bottom: 21px;
+    margin-bottom: 21px;
   }
 }
 
 .about__full-text {
   display: none;
-  margin-bottom: 20px;
+  margin-top: 23px;
 }
 
 .about.open .about__full-text {
@@ -62,4 +74,5 @@
 .about__btn {
   min-width: 180px;
   padding: 13px 25px;
+  margin-top: 20px;
 }

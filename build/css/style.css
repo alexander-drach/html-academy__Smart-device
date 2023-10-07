@@ -1569,6 +1569,11 @@ button,
   padding-top: 30px;
   padding-bottom: 100px;
 }
+@media (max-width: 1023px) {
+  .about {
+    padding-bottom: 80px;
+  }
+}
 
 .about .section-title {
   margin-bottom: 13px;
@@ -1587,6 +1592,11 @@ button,
   .about__year {
     width: 177px;
     padding-top: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .about__year {
+    display: none;
   }
 }
 
@@ -1608,6 +1618,11 @@ button,
     margin-bottom: -2px;
   }
 }
+@media (max-width: 767px) {
+  .about__desc {
+    font-size: 14px;
+  }
+}
 
 .about__desc p {
   margin-top: 0;
@@ -1624,7 +1639,7 @@ button,
 
 .about__full-text {
   display: none;
-  margin-bottom: 20px;
+  margin-top: 23px;
 }
 
 .about.open .about__full-text {
@@ -1634,6 +1649,7 @@ button,
 .about__btn {
   min-width: 180px;
   padding: 13px 25px;
+  margin-top: 20px;
 }
 
 .logo {
@@ -1754,6 +1770,12 @@ button,
   font-weight: 400;
   line-height: 140.625%;
   margin-top: 0;
+}
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 140.625%;
+  }
 }
 
 /* @mixin hover-focus {
