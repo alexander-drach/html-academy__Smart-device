@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/bg/bg-hero.png");
+  background-color: $color-primary-black-opacity;
 
   @include vp-1023 {
     padding-top: 180px;
