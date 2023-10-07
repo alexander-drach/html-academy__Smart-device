@@ -566,14 +566,6 @@ button,
   opacity: 0.5;
   pointer-events: none;
 }
-@media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-}
-.btn.focus-visible:focus {
-  opacity: 0.8;
-}
 .btn--fz-14 {
   font-size: 14px;
   letter-spacing: 0.7px;
@@ -596,12 +588,12 @@ button,
 }
 @media (hover: hover) {
   .btn--blue:hover:not(.focus-visible) {
-    background-color: #f2f5f6;
+    background-color: #ffffff;
     color: #00b2ff;
   }
 }
 .btn--blue.focus-visible:focus {
-  background-color: #f2f5f6;
+  background-color: #ffffff;
   color: #00b2ff;
 }
 .btn--transparent {
@@ -1262,6 +1254,16 @@ button,
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+@media (hover: hover) {
+  .footer__link:hover:not(.focus-visible) {
+    color: #00b2ff;
+  }
+}
+.footer__link.focus-visible:focus {
+  color: #00b2ff;
 }
 .footer__link--menu {
   line-height: 22px;
@@ -1689,6 +1691,16 @@ button,
   width: 100%;
   height: 100%;
   color: #ffffff;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+@media (hover: hover) {
+  .services__link:hover:not(.focus-visible) {
+    color: #00b2ff;
+  }
+}
+.services__link.focus-visible:focus {
+  color: #00b2ff;
 }
 .services__link::before {
   content: "";
@@ -1783,6 +1795,17 @@ button,
   width: 40px;
   height: 40px;
   margin-right: 15px;
+  border-radius: 50%;
+  -webkit-transition: outline 0.3s ease;
+  transition: outline 0.3s ease;
+}
+@media (hover: hover) {
+  .social__link:hover:not(.focus-visible) {
+    outline: 2px solid #00b2ff;
+  }
+}
+.social__link.focus-visible:focus {
+  outline: 2px solid #00b2ff;
 }
 .social__link:last-child {
   margin-right: 0;

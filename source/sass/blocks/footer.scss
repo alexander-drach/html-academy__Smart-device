@@ -133,6 +133,12 @@
   font-style: normal;
   font-weight: 400;
 
+  transition: color $trans-default;
+
+  @include hover-focus {
+    color: $color-primary-blue;
+  }
+
   &--menu {
     line-height: 22px;
   }

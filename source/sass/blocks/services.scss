@@ -39,6 +39,12 @@
 
   color: $color-default-white;
 
+  transition: color $trans-default;
+
+  @include hover-focus {
+    color: $color-primary-blue;
+  }
+
   &::before {
     content: "";
 

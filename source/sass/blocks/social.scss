@@ -18,6 +18,13 @@
   width: 40px;
   height: 40px;
   margin-right: 15px;
+  border-radius: 50%;
+
+  transition: outline $trans-default;
+
+  @include hover-focus {
+    outline: 2px solid $color-primary-blue;
+  }
 
   &:last-child {
     margin-right: 0;

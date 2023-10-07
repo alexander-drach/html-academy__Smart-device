@@ -25,10 +25,6 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
-  }
-
   &--fz-14 {
     font-size: 14px;
     letter-spacing: 0.7px;
@@ -54,7 +50,7 @@
     color: $color-primary-white;
 
     @include hover-focus {
-      background-color: $color-primary-white;
+      background-color: $color-default-white;
       color: $color-primary-blue;
     }
   }
