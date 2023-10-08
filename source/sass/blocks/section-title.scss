@@ -12,3 +12,19 @@
     line-height: 140.625%;
   }
 }
+
+.section-title span {
+  &:first-child {
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+    }
+  }
+}

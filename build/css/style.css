@@ -1693,6 +1693,11 @@ button,
         flex-wrap: wrap;
   }
 }
+@media (max-width: 767px) {
+  .services__list {
+    margin: 0 -25px;
+  }
+}
 @media (max-width: 374px) {
   .services__list {
     margin: 0;
@@ -1712,6 +1717,12 @@ button,
     width: -moz-max-content;
     width: max-content;
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .services__item {
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 @media (max-width: 374px) {
@@ -1934,6 +1945,20 @@ button,
   .section-title {
     font-size: 28px;
     line-height: 140.625%;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title span:first-child {
+    display: none;
+  }
+}
+.section-title span:last-child {
+  display: none;
+}
+@media (max-width: 767px) {
+  .section-title span:last-child {
+    display: block;
   }
 }
 
