@@ -3,7 +3,70 @@
   padding-bottom: 250px;
   background-color: $color-primary-blue;
 
+  color: $color-default-white;
+
   @include vp-1023 {
     background-color: $color-primary-blue;
   }
+}
+
+.contact__inner {
+  display: flex;
+}
+
+.contact__img,
+.conact__content {
+  width: 50%;
+}
+
+.contact .section-title {
+  margin-bottom: 15px;
+}
+
+.contact__desc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 134.4%;
+
+  margin-bottom: 35px;
+}
+
+.contact__desc p {
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact__form .custom-input {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.contact__form .custom-textarea {
+  width: 100%;
+
+  margin-bottom: 35px;
+}
+
+.contact__form .custom-input--name {
+  margin-right: 30px;
+}
+
+.contact__btn {
+  margin-right: 50px;
+}
+
+.contact .custom-toggle {
+  position: relative;
+
+  max-width: 234px;
 }

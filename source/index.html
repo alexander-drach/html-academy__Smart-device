@@ -150,8 +150,8 @@
           <div class="about__inner">
             <div class="about__year">
               <picture>
-                <source type="image/webp" srcset="img/about-year.webp 1x, img/about-year@2x.webp 2x"/>
-                <source type="image/png" srcset="img/about-year.png 1x, img/about-year@2x.png 2x"/>
+                <source type="image/webp" srcset="img/about-year.webp 1x, img/about-year@2x.webp 2x" />
+                <source type="image/png" srcset="img/about-year.png 1x, img/about-year@2x.png 2x" />
                 <img src="img/about-year.png" alt="" />
               </picture>
             </div>
@@ -287,7 +287,37 @@
       </section><!--services -->
       <section class="contact">
         <div class="container">
-          <div class="contact__inner"></div>
+          <div class="contact__inner">
+            <div class="contact__img">
+              <picture>
+                <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x" />
+                <source type="image/png" srcset="img/paper-airplane.png 1x, img/paper-airplane@2x.png 2x" />
+                <img src="img/paper-airplane.png" alt="" />
+              </picture>
+            </div>
+            <div class="conact__content">
+              <h2 class="section-title">Остались вопросы? Задайте их нам!</h2>
+              <div class="contact__desc">
+                <p>
+                  Мы проконсультируем Вас бесплатно
+                </p>
+              </div>
+              <form class="contact__form" method="post" action="https://echo.htmlacademy.ru" name="contact__form">
+                <input class="custom-input custom-input--name" type="text" placeholder="Имя" required>
+                <input class="custom-input custom-input--phone" type="tel" placeholder="Телефон" required>
+                <textarea class="custom-textarea" placeholder="Ваш вопрос"></textarea>
+
+                <button class="btn btn--dark btn--fz-16 contact__btn" type="submit">Задать вопрос</button>
+                <div class="custom-toggle custom-toggle--checkbox">
+                  <input id="contact-agree" type="checkbox" name="agree">
+                  <span class="custom-toggle__icon"></span>
+                  <label for="contact-agree">
+                    Я согласен на обработку  персональных данных
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div><!-- contact__inner -->
         </div>
       </section>
     </main>
@@ -402,7 +432,26 @@
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
+        <h2 class="modal__title">Закажите звонок</h2>
+              <div class="modal__desc">
+                <p>
+                  Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+                </p>
+              </div>
+              <form class="modal__form" method="post" action="https://echo.htmlacademy.ru" name="modal__form">
+                <input class="custom-input custom-input--name" type="text" placeholder="Имя" required>
+                <input class="custom-input custom-input--phone" type="tel" placeholder="Телефон" required>
+                <textarea class="custom-textarea" placeholder="Ваш вопрос"></textarea>
+
+                <button class="btn btn--dark btn--fz-16 modal__btn" type="submit">Отправить</button>
+                <div class="custom-toggle custom-toggle--checkbox">
+                  <input id="contact-agree" type="checkbox" name="agree">
+                  <span class="custom-toggle__icon"></span>
+                  <label for="contact-agree">
+                    Я согласен на обработку  персональных данных
+                  </label>
+                </div>
+              </form>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="15" height="15">
             <use xlink:href="img/sprite.svg#icon-close"></use>
