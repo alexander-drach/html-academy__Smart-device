@@ -765,6 +765,7 @@ button,
   border-radius: 3px;
   background-color: rgba(4, 20, 39, 0.15);
   border: none;
+  color: #f2f5f6;
 }
 .custom-input::-webkit-input-placeholder, .custom-textarea::-webkit-input-placeholder {
   color: #ffffff;
