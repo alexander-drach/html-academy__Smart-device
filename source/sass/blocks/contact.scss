@@ -1,7 +1,9 @@
 .contact {
-  min-height: 840px;
-
   padding-top: 170px;
   padding-bottom: 250px;
-  background: linear-gradient(-41deg, $color-primary-blue 0%, $color-primary-blue 66.5%, $color-blue-darker 66.5%);
+  background-color: $color-primary-blue;
+
+  @include vp-1023 {
+    background-color: $color-primary-blue;
+  }
 }

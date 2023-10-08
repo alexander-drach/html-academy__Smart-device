@@ -1642,6 +1642,20 @@ button,
   }
 }
 
+@media (max-width: 767px) {
+  .about__default-text span:first-child {
+    display: none;
+  }
+}
+.about__default-text span:last-child {
+  display: none;
+}
+@media (max-width: 767px) {
+  .about__default-text span:last-child {
+    display: block;
+  }
+}
+
 .about__full-text {
   display: none;
   margin-top: 23px;
@@ -1805,10 +1819,14 @@ button,
 }
 
 .contact {
-  min-height: 840px;
   padding-top: 170px;
   padding-bottom: 250px;
-  background: linear-gradient(-41deg, #00b2ff 0%, #00b2ff 66.5%, #026593 66.5%);
+  background-color: #00b2ff;
+}
+@media (max-width: 1023px) {
+  .contact {
+    background-color: #00b2ff;
+  }
 }
 
 .logo {

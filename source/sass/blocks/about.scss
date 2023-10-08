@@ -63,6 +63,22 @@
   }
 }
 
+.about__default-text span {
+  &:first-child {
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+    }
+  }
+}
+
 .about__full-text {
   display: none;
   margin-top: 23px;
