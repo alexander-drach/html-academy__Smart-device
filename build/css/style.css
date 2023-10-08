@@ -1793,6 +1793,13 @@ button,
   }
 }
 
+.contact {
+  min-height: 840px;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  background: linear-gradient(-41deg, #00b2ff 0%, #00b2ff 66.5%, #026593 66.5%);
+}
+
 .logo {
   -ms-flex-negative: 0;
       flex-shrink: 0;
