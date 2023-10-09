@@ -643,7 +643,6 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   border: 1px solid rgba(255, 255, 255, 0);
   background-color: #00b2ff;
-  border: none;
   border-radius: 3px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -812,7 +811,7 @@ button,
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140.625%;
+  line-height: 140.63%;
   margin-top: 0;
   margin-bottom: 3px;
 }
@@ -1073,7 +1072,6 @@ button,
 
 .footer__link {
   color: rgba(255, 255, 255, 0.7);
-  font-family: PT Mono;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1416,6 +1414,10 @@ button,
   color: #ffffff;
 }
 
+.contact .section-title {
+  margin-bottom: 13px;
+}
+
 .contact__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1431,10 +1433,6 @@ button,
   width: 50%;
   padding-left: 6px;
   padding-right: 9px;
-}
-
-.contact .section-title {
-  margin-bottom: 13px;
 }
 
 .contact__desc {
@@ -1579,7 +1577,7 @@ button,
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140.625%;
+  line-height: 140.63%;
   margin-top: 0;
 }
 
@@ -1823,6 +1821,10 @@ button,
     padding-bottom: 123px;
   }
 
+  .contact .section-title {
+    margin-bottom: 7px;
+  }
+
   .contact__img {
     display: none;
   }
@@ -1831,10 +1833,6 @@ button,
     width: 100%;
     padding-left: 1px;
     padding-right: 0;
-  }
-
-  .contact .section-title {
-    margin-bottom: 7px;
   }
 
   .contact__desc {
@@ -2074,7 +2072,7 @@ button,
 
   .contact .section-title {
     font-size: 30px;
-    line-height: 140.625%;
+    line-height: 140.63%;
   }
 
   .contact__desc {
@@ -2135,7 +2133,6 @@ button,
 
   .section-title {
     font-size: 28px;
-    line-height: 140.625%;
   }
 
   .section-title span:first-child {

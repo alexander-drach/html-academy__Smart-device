@@ -8,6 +8,11 @@
   <meta name="description" content="Печатные платы. производство и монтаж, поставка комплектующих, блоков и модулей">
   <title>Smart Device | производство печатных плат</title>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+
   <link rel="preload" href="fonts/Robotocondensed.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptmono.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -324,7 +329,7 @@
                   <input id="contact-agree" type="checkbox" name="agree">
                   <span class="custom-toggle__icon"></span>
                   <label for="contact-agree">
-                    Я согласен на обработку  персональных данных
+                    Я согласен на обработку персональных данных
                   </label>
                 </div>
               </form>
@@ -445,25 +450,25 @@
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
         <h2 class="modal__title">Закажите звонок</h2>
-              <div class="modal__desc">
-                <p>
-                  Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
-                </p>
-              </div>
-              <form class="modal__form" method="post" action="https://echo.htmlacademy.ru" name="modal__form">
-                <input class="custom-input custom-input--name" type="text" placeholder="Имя" required>
-                <input class="custom-input custom-input--phone" type="tel" placeholder="Телефон" required>
-                <textarea class="custom-textarea" placeholder="Ваш вопрос"></textarea>
+        <div class="modal__desc">
+          <p>
+            Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+          </p>
+        </div>
+        <form class="modal__form" method="post" action="https://echo.htmlacademy.ru" name="modal__form">
+          <input class="custom-input custom-input--name" type="text" placeholder="Имя" required>
+          <input class="custom-input custom-input--phone" type="tel" placeholder="Телефон" required>
+          <textarea class="custom-textarea" placeholder="Ваш вопрос"></textarea>
 
-                <button class="btn btn--dark btn--fz-16 modal__btn" type="submit">Отправить</button>
-                <div class="custom-toggle custom-toggle--checkbox">
-                  <input id="modal-agree" type="checkbox" name="agree">
-                  <span class="custom-toggle__icon"></span>
-                  <label for="modal-agree">
-                    Я согласен на обработку  персональных данных
-                  </label>
-                </div>
-              </form>
+          <button class="btn btn--dark btn--fz-16 modal__btn" type="submit">Отправить</button>
+          <div class="custom-toggle custom-toggle--checkbox">
+            <input id="modal-agree" type="checkbox" name="agree">
+            <span class="custom-toggle__icon"></span>
+            <label for="modal-agree">
+              Я согласен на обработку персональных данных
+            </label>
+          </div>
+        </form>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-close"></use>

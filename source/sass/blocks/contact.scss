@@ -18,9 +18,15 @@
 }
 
 .contact .section-title {
+  margin-bottom: 13px;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
+
   @include vp-767 {
     font-size: 30px;
-    line-height: 140.625%;
+    line-height: 140.63%;
   }
 }
 
@@ -41,8 +47,6 @@
   @include vp-1023 {
     display: none;
   }
-
-  @include vp-767 {}
 }
 
 .conact__content {
@@ -60,14 +64,6 @@
 
     padding-left: 1px;
     padding-right: 0;
-  }
-}
-
-.contact .section-title {
-  margin-bottom: 13px;
-
-  @include vp-1023 {
-    margin-bottom: 7px;
   }
 }
 
