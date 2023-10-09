@@ -27,4 +27,8 @@
   padding: 25px 15px;
   resize: none;
   min-height: 155px;
+
+  @include vp-1023 {
+    padding-top: 33px;
+  }
 }
