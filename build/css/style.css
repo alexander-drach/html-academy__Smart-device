@@ -798,6 +798,12 @@ button,
     padding-top: 33px;
   }
 }
+@media (max-width: 767px) {
+  .custom-textarea {
+    padding-top: 25px;
+    min-height: 180px;
+  }
+}
 
 .custom-toggle {
   position: relative;
@@ -1566,6 +1572,12 @@ button,
     padding-bottom: 44px;
   }
 }
+@media (max-width: 767px) {
+  .services {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+}
 
 .services .section-title {
   margin-bottom: 52px;
@@ -1573,6 +1585,11 @@ button,
 @media (max-width: 1023px) {
   .services .section-title {
     margin-bottom: 39px;
+  }
+}
+@media (max-width: 767px) {
+  .services .section-title {
+    margin-bottom: 30px;
   }
 }
 
@@ -1679,6 +1696,8 @@ button,
 @media (max-width: 767px) {
   .services__title {
     font-size: 18px;
+    left: 30px;
+    top: 25px;
   }
 }
 
@@ -1715,6 +1734,19 @@ button,
     padding-bottom: 123px;
   }
 }
+@media (max-width: 767px) {
+  .contact {
+    padding-bottom: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .section-title {
+    font-size: 30px;
+    line-height: 140.625%;
+  }
+}
+
 .contact__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1775,6 +1807,12 @@ button,
     margin-bottom: 26px;
   }
 }
+@media (max-width: 767px) {
+  .contact__desc {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+}
 
 .contact__desc p {
   margin-top: 0;
@@ -1800,14 +1838,32 @@ button,
       -ms-flex: 1;
           flex: 1;
 }
+@media (max-width: 767px) {
+  .contact__form .custom-input {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    margin-bottom: 21px;
+  }
+}
 
 .contact__form .custom-textarea {
   width: 100%;
   margin-bottom: 35px;
 }
+@media (max-width: 767px) {
+  .contact__form .custom-textarea {
+    margin-bottom: 29px;
+  }
+}
 
 .contact__form .custom-input--name {
   margin-right: 30px;
+}
+@media (max-width: 767px) {
+  .contact__form .custom-input--name {
+    margin-right: 0;
+  }
 }
 
 .contact__btn {
@@ -1822,6 +1878,13 @@ button,
     margin-right: 84px;
   }
 }
+@media (max-width: 767px) {
+  .contact__btn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
 
 .contact .custom-toggle {
   position: relative;
@@ -1830,6 +1893,12 @@ button,
 @media (max-width: 1023px) {
   .contact .custom-toggle {
     margin-bottom: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .contact .custom-toggle {
+    margin-left: 4px;
+    margin-bottom: 0;
   }
 }
 

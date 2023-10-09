@@ -13,6 +13,14 @@
   }
 
   @include vp-767 {
+    padding-bottom: 90px;
+  }
+}
+
+.contact .section-title {
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 140.625%;
   }
 }
 
@@ -34,8 +42,7 @@
     display: none;
   }
 
-  @include vp-767 {
-  }
+  @include vp-767 {}
 }
 
 .conact__content {
@@ -75,6 +82,12 @@
   @include vp-1023 {
     margin-bottom: 26px;
   }
+
+  @include vp-767 {
+    font-size: 14px;
+
+    margin-bottom: 35px;
+  }
 }
 
 .contact__desc p {
@@ -94,16 +107,30 @@
 .contact__form .custom-input {
   margin-bottom: 20px;
   flex: 1;
+
+  @include vp-767 {
+    flex: 100%;
+
+    margin-bottom: 21px;
+  }
 }
 
 .contact__form .custom-textarea {
   width: 100%;
 
   margin-bottom: 35px;
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
 }
 
 .contact__form .custom-input--name {
   margin-right: 30px;
+
+  @include vp-767 {
+    margin-right: 0;
+  }
 }
 
 .contact__btn {
@@ -118,6 +145,13 @@
     padding: 17px 25px 11px 25px;
     margin-right: 84px;
   }
+
+  @include vp-767 {
+    width: 100%;
+
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
 }
 
 .contact .custom-toggle {
@@ -127,5 +161,10 @@
 
   @include vp-1023 {
     margin-bottom: 6px;
+  }
+
+  @include vp-767 {
+    margin-left: 4px;
+    margin-bottom: 0;
   }
 }
