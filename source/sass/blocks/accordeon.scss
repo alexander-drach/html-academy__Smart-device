@@ -18,6 +18,8 @@
   .accordeon__content {
     @include vp-767 {
       display: block;
+
+      padding-top: 15px;
     }
   }
 }
@@ -27,6 +29,10 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
 }
 
 .accordeon__toggle {
