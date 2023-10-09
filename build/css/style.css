@@ -661,12 +661,6 @@ button,
           align-items: center;
   width: 100%;
   min-height: 100%;
-  padding: 60px 40px;
-}
-@media (max-width: 767px) {
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
 }
 .modal__overlay {
   position: absolute;
@@ -679,7 +673,7 @@ button,
 .modal__content {
   position: relative;
   width: 500px;
-  padding: 40px;
+  padding: 38px 40px 40px 40px;
   background-color: #00b2ff;
 }
 @media (max-width: 767px) {
@@ -690,8 +684,8 @@ button,
 }
 .modal__close-btn {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 17px;
+  right: 16px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -730,10 +724,20 @@ button,
 }
 
 .modal__title {
-  margin-bottom: 15px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.625%;
+  margin-top: 0;
+  margin-bottom: 3px;
 }
 
 .modal__desc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 134.4%;
   margin-bottom: 40px;
 }
 
@@ -755,6 +759,11 @@ button,
 .modal__btn {
   width: 100%;
   margin-bottom: 20px;
+  padding: 13px 20px;
+}
+
+.modal .custom-toggle {
+  margin-left: 8px;
 }
 
 .custom-input,
@@ -2045,8 +2054,7 @@ button,
   }
 }
 
-.section-title,
-.modal__title {
+.section-title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   font-style: normal;
@@ -2055,8 +2063,7 @@ button,
   margin-top: 0;
 }
 @media (max-width: 767px) {
-  .section-title,
-.modal__title {
+  .section-title {
     font-size: 28px;
     line-height: 140.625%;
   }
