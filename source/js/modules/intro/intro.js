@@ -3,8 +3,8 @@ const intro = () => {
   const contact = document.querySelector('.contact');
 
   introBtn.addEventListener('click', () => {
-    contact.scrollIntoView({behavior: "smooth"});
-  })
+    contact.scrollIntoView({behavior: 'smooth'});
+  });
 };
 
-export { intro };
+export {intro};

@@ -11,7 +11,7 @@ const showFullTextAbout = () => {
     } else {
       aboutBtn.textContent = 'Подробнее';
     }
-  })
+  });
 };
 
-export { showFullTextAbout };
+export {showFullTextAbout};
