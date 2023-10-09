@@ -9,6 +9,7 @@
 
   @include vp-767 {
     padding-top: 50px;
+    padding-bottom: 0;
   }
 }
 
@@ -46,9 +47,16 @@
 
   @include vp-767 {
     width: 100%;
-    min-height: auto;
+    min-height: 340px;
 
     padding: 29px 25px 35px 25px;
+  }
+}
+
+.features__item--confidentiality,
+.features__item--personal-cost {
+  @include vp-767 {
+    min-height: 325px;
   }
 }
 

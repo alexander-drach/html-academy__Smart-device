@@ -965,6 +965,11 @@ button,
   padding-bottom: 55px;
   color: rgba(255, 255, 255, 0.7);
 }
+@media (max-width: 1023px) {
+  .footer {
+    padding-bottom: 64px;
+  }
+}
 @media (max-width: 767px) {
   .footer {
     padding-top: 35px;
@@ -1014,7 +1019,7 @@ button,
             justify-content: space-between;
     width: 100%;
     margin-right: 0;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
 }
 @media (max-width: 767px) {
@@ -1053,6 +1058,7 @@ button,
 }
 @media (max-width: 1023px) {
   .footer__block--menu {
+    width: 50%;
     padding-top: 0;
     margin-top: 0;
     margin-left: 0;
@@ -1088,7 +1094,7 @@ button,
   margin-bottom: 0;
   margin-right: 30px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .main-menu__col {
     width: auto;
   }
@@ -1135,6 +1141,7 @@ button,
 }
 @media (max-width: 1023px) {
   .footer__block--contact {
+    width: 48%;
     margin-left: 0;
     padding-top: 0;
   }
@@ -1302,6 +1309,7 @@ button,
 @media (max-width: 767px) {
   .features {
     padding-top: 50px;
+    padding-bottom: 0;
   }
 }
 
@@ -1338,8 +1346,15 @@ button,
 @media (max-width: 767px) {
   .features__item {
     width: 100%;
-    min-height: auto;
+    min-height: 340px;
     padding: 29px 25px 35px 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .features__item--confidentiality,
+.features__item--personal-cost {
+    min-height: 325px;
   }
 }
 
@@ -1431,6 +1446,11 @@ button,
 @media (max-width: 1023px) {
   .about {
     padding-bottom: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .about {
+    padding-top: 17px;
   }
 }
 
@@ -1525,6 +1545,13 @@ button,
   min-width: 180px;
   padding: 13px 25px;
   margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .about__btn {
+    min-width: 160px;
+    margin-top: 14px;
+    padding: 8px 25px;
+  }
 }
 
 .services {
@@ -1843,6 +1870,7 @@ button,
 @media (max-width: 1023px) {
   .social {
     margin-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -1873,6 +1901,11 @@ button,
 }
 .social__link:last-child {
   margin-right: 0;
+}
+@media (max-width: 1023px) {
+  .social__link:last-child {
+    margin-right: -5px;
+  }
 }
 
 .accordeon .accordeon__toggle--minus {
