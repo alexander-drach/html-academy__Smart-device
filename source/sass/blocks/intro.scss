@@ -129,7 +129,23 @@
     font-size: 14px;
     letter-spacing: 0.7px;
 
-    padding: 12px 37px;
+    padding: 12px 10px;
     margin-left: 0;
+  }
+}
+
+.intro__btn span {
+  &:first-child {
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+    }
   }
 }

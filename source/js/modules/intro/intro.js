@@ -1,17 +1,22 @@
 const intro = () => {
   const introBtn = document.querySelector('.intro__btn');
+  const contact = document.querySelector('.contact');
 
-  const changeTextIntroBtn = () => {
-    if (window.matchMedia("(max-width: 767px)").matches) {
-      introBtn.textContent = 'Бесплатная консультация';
-    } else {
-      introBtn.textContent = 'Получить бесплатную консультацию';
-    }
-  }
+  introBtn.addEventListener('click', () => {
+    contact.scrollIntoView({behavior: "smooth"});
+  })
 
-  changeTextIntroBtn();
+  // const changeTextIntroBtn = () => {
+  //   if (window.matchMedia("(max-width: 767px)").matches) {
+  //     introBtn.textContent = 'Бесплатная консультация';
+  //   } else {
+  //     introBtn.textContent = 'Получить бесплатную консультацию';
+  //   }
+  // }
 
-  window.addEventListener('resize', changeTextIntroBtn);
+  // changeTextIntroBtn();
+
+  // window.addEventListener('resize', changeTextIntroBtn);
 };
 
 export { intro };

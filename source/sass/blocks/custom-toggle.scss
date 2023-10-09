@@ -21,18 +21,24 @@
 
   label {
     position: relative;
+    // display: flex;
+    // align-items: center;
+    padding-left: 25px;
 
     cursor: pointer;
   }
 
   &--checkbox {
     .custom-toggle__icon {
-      flex-shrink: 0;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
 
       width: 15px;
       height: 15px;
 
-      margin-right: 10px;
+      // margin-right: 10px;
 
       border: 1px solid $color-default-white;
 

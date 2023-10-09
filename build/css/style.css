@@ -836,14 +836,18 @@ button,
 }
 .custom-toggle label {
   position: relative;
+  padding-left: 25px;
   cursor: pointer;
 }
 .custom-toggle--checkbox .custom-toggle__icon {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  margin-right: 10px;
   border: 1px solid #ffffff;
   border-radius: 1.5px;
   -webkit-transition: border 0.3s ease;
@@ -1312,8 +1316,22 @@ button,
     width: 100%;
     font-size: 14px;
     letter-spacing: 0.7px;
-    padding: 12px 37px;
+    padding: 12px 10px;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro__btn span:first-child {
+    display: none;
+  }
+}
+.intro__btn span:last-child {
+  display: none;
+}
+@media (max-width: 767px) {
+  .intro__btn span:last-child {
+    display: block;
   }
 }
 
