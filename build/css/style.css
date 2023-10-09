@@ -587,12 +587,12 @@ button,
   color: #f2f5f6;
 }
 @media (hover: hover) {
-  .btn--blue:hover:not(.focus-visible) {
+  .btn:hover:not(.focus-visible) {
     background-color: #ffffff;
     color: #00b2ff;
   }
 }
-.btn--blue.focus-visible:focus {
+.btn.focus-visible:focus {
   background-color: #ffffff;
   color: #00b2ff;
 }
