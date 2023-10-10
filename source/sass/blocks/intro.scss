@@ -11,10 +11,18 @@
   background-image: url("../img/bg/bg-hero.png");
   background-color: $color-primary-black-opacity;
 
+  @supports (background-image: url("../img/bg/bg-hero.webp")) {
+    background-image: url("../img/bg/bg-hero.webp");
+  }
+
   @include vp-1023 {
     padding-top: 180px;
     padding-bottom: 206px;
     background-image: url("../img/bg/bg-hero-tablet.png");
+
+    @supports (background-image: url("../img/bg/bg-hero-tablet.webp")) {
+      background-image: url("../img/bg/bg-hero-tablet.webp");
+    }
   }
 
   @include vp-767 {
@@ -22,6 +30,10 @@
     padding-bottom: 190px;
 
     background-image: url("../img/bg/bg-hero-mobile.png");
+
+    @supports (background-image: url("../img/bg/bg-hero-mobile.webp")) {
+      background-image: url("../img/bg/bg-hero-mobile.webp");
+    }
   }
 
   &::before {
