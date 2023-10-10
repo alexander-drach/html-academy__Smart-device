@@ -14,6 +14,10 @@
 .about .section-title {
   margin-bottom: 13px;
   color: $color-primary-black;
+
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
 }
 
 .about__inner {

@@ -1171,7 +1171,7 @@ button,
 }
 
 .intro__btn {
-  padding: 17px 28px;
+  padding: 16px 27px;
 }
 
 .intro__btn span:last-child {
@@ -1410,7 +1410,7 @@ button,
 .contact {
   padding-top: 165px;
   padding-bottom: 250px;
-  background-color: #00b2ff;
+  background: #00b2ff;
   color: #ffffff;
 }
 
@@ -1714,7 +1714,7 @@ button,
     justify-content: space-between;
     width: 100%;
     margin-right: 0;
-    margin-bottom: 38px;
+    margin-bottom: 21px;
   }
 
   .footer__block--menu {
@@ -1856,6 +1856,7 @@ button,
   .social {
     margin-top: 0;
     margin-left: 0;
+    margin-bottom: 22px;
   }
 
   .social__link:last-child {
@@ -1909,7 +1910,7 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-bottom: 24px;
+    margin-bottom: 1px;
   }
 
   .footer__block--menu {
@@ -2013,6 +2014,10 @@ button,
 
   .about {
     padding-top: 17px;
+  }
+
+  .about .section-title {
+    margin-bottom: 10px;
   }
 
   .about__year {
