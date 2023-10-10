@@ -321,7 +321,7 @@
               </div>
               <form class="contact__form" method="post" action="https://echo.htmlacademy.ru" name="contact__form">
                 <input class="custom-input custom-input--name" type="text" placeholder="Имя" required>
-                <input class="custom-input custom-input--phone" type="tel" placeholder="Телефон" required>
+                <input class="custom-input custom-input--phone" type="tel" placeholder="Телефон" required pattern="2-[0-9]{3}-[0-9]{3}">
                 <textarea class="custom-textarea" placeholder="Ваш вопрос"></textarea>
 
                 <button class="btn btn--dark btn--fz-16 contact__btn" type="submit">Задать вопрос</button>
@@ -460,7 +460,7 @@
         </div>
         <form class="modal__form" method="post" action="https://echo.htmlacademy.ru" name="modal__form">
           <input class="custom-input custom-input--name" type="text" placeholder="Имя" required>
-          <input class="custom-input custom-input--phone" type="tel" placeholder="Телефон" required>
+          <input class="custom-input custom-input--phone" type="tel" placeholder="Телефон" required pattern="2-[0-9]{3}-[0-9]{3}">
           <textarea class="custom-textarea" placeholder="Ваш вопрос"></textarea>
 
           <button class="btn btn--dark btn--fz-16 modal__btn" type="submit">Отправить</button>

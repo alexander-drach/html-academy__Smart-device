@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {accordeon} from './modules/accordeon/accordeon';
 import {intro} from './modules/intro/intro';
 import {showFullTextAbout} from './modules/about/show-full-text-about';
+import {validatePhone} from './modules/form/validate-phone';
 
 // ---------------------------------
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   accordeon();
   intro();
   showFullTextAbout();
+  validatePhone();
 
   // Modules
   // ---------------------------------
