@@ -1410,7 +1410,7 @@ button,
 .contact {
   padding-top: 165px;
   padding-bottom: 250px;
-  background: #00b2ff;
+  background: -webkit-linear-gradient(131deg, #00b2ff 66.5%, #026593 66.5%);
   color: #ffffff;
 }
 
