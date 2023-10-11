@@ -62,7 +62,7 @@
           <div class="intro__desc">
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
           </div>
-          <a href="#" class="btn btn--fz-18 btn--blue intro__btn">
+          <a href="#contact" class="btn btn--fz-18 btn--blue intro__btn">
             <span>Получить бесплатную консультацию</span>
             <span>Бесплатная консультация</span>
           </a>
@@ -240,7 +240,7 @@
           </ul>
         </div>
       </section><!--services -->
-      <section class="section contact">
+      <section id="contact" class="section contact">
         <div class="container">
           <div class="contact__inner">
             <div class="contact__img">
@@ -257,7 +257,7 @@
               </div>
               <form class="contact__form" method="post" action="https://echo.htmlacademy.ru" name="contact__form">
                 <input name="name" type="text" placeholder="Имя" required aria-label="Имя">
-                <input name="phone" type="tel" placeholder="Телефон" required aria-label="Телефон">
+                <input name="phone" type="tel" placeholder="Телефон" required aria-label="Телефон" [data-validate-type="phone"]>
                 <textarea placeholder="Ваш вопрос"></textarea>
 
                 <button class="btn btn--dark btn--fz-16 contact__btn" type="submit">Задать вопрос</button>
