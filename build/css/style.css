@@ -1254,7 +1254,7 @@ textarea {
   padding-bottom: 100px;
 }
 
-.about .section-title {
+.about h2 {
   margin-bottom: 13px;
   color: #041427;
 }
@@ -1319,7 +1319,7 @@ textarea {
   padding-bottom: 142px;
 }
 
-.services .section-title {
+.services h2 {
   margin-bottom: 52px;
 }
 
@@ -1405,7 +1405,7 @@ textarea {
   color: #ffffff;
 }
 
-.contact .section-title {
+.contact h2 {
   margin-bottom: 13px;
 }
 
@@ -1563,7 +1563,7 @@ textarea {
   background-color: transparent;
 }
 
-.section-title {
+.section h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   font-style: normal;
@@ -1572,7 +1572,7 @@ textarea {
   margin-top: 0;
 }
 
-.section-title span:last-child {
+h2 span:last-child {
   display: none;
 }
 
@@ -1814,7 +1814,7 @@ textarea {
     padding-bottom: 44px;
   }
 
-  .services .section-title {
+  .services h2 {
     margin-bottom: 39px;
   }
 
@@ -1841,7 +1841,7 @@ textarea {
     padding-bottom: 123px;
   }
 
-  .contact .section-title {
+  .contact h2 {
     margin-bottom: 7px;
   }
 
@@ -2042,7 +2042,7 @@ textarea {
     padding-top: 17px;
   }
 
-  .about .section-title {
+  .about h2 {
     margin-bottom: 10px;
   }
 
@@ -2073,7 +2073,7 @@ textarea {
     padding-bottom: 56px;
   }
 
-  .services .section-title {
+  .services h2 {
     margin-bottom: 30px;
   }
 
@@ -2101,7 +2101,7 @@ textarea {
     padding-bottom: 90px;
   }
 
-  .contact .section-title {
+  .contact h2 {
     font-size: 30px;
     line-height: 140.63%;
   }
@@ -2162,15 +2162,15 @@ textarea {
     display: none;
   }
 
-  .section-title {
+  .section h2 {
     font-size: 28px;
   }
 
-  .section-title span:first-child {
+  h2 span:first-child {
     display: none;
   }
 
-  .section-title span:last-child {
+  h2 span:last-child {
     display: block;
   }
 
