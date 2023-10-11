@@ -1367,6 +1367,18 @@ textarea {
   z-index: 1;
 }
 
+.services__link::after {
+  content: "";
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  background: url("../img/sprite.svg#icon-card") no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+
 .services__title {
   position: absolute;
   left: 40px;
@@ -1384,15 +1396,6 @@ textarea {
 .services__thumb {
   -o-object-fit: fill;
   object-fit: fill;
-}
-
-.services__icon {
-  position: absolute;
-  right: 1px;
-  bottom: 0;
-  width: 60px;
-  height: 60px;
-  z-index: 2;
 }
 
 .contact {
@@ -2083,15 +2086,15 @@ textarea {
     margin-right: 25px;
   }
 
+  .services__link::after {
+    width: 40px;
+    height: 40px;
+  }
+
   .services__title {
     font-size: 18px;
     left: 30px;
     top: 25px;
-  }
-
-  .services__icon {
-    width: 40px;
-    height: 40px;
   }
 
   .contact {
