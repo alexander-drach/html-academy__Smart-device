@@ -284,9 +284,9 @@
                 <p>Мы проконсультируем Вас бесплатно</p>
               </div>
               <form class="contact__form" method="post" action="https://echo.htmlacademy.ru" name="contact__form">
-                <input class="custom-input custom-input--name" type="text" placeholder="Имя" required>
-                <input class="custom-input custom-input--phone" type="tel" placeholder="Телефон" required pattern="2-[0-9]{3}-[0-9]{3}">
-                <textarea class="custom-textarea" placeholder="Ваш вопрос"></textarea>
+                <input class="custom-input custom-input--name" name="name" type="text" placeholder="Имя" required>
+                <input class="custom-input custom-input--phone" name="phone" type="tel" placeholder="Телефон" required pattern="[0-9]{,10}">
+                <textarea class="custom-textarea" name="message" placeholder="Ваш вопрос"></textarea>
 
                 <button class="btn btn--dark btn--fz-16 contact__btn" type="submit">Задать вопрос</button>
                 <div class="custom-toggle custom-toggle--checkbox">
@@ -417,9 +417,9 @@
           <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         </div>
         <form class="modal__form" method="post" action="https://echo.htmlacademy.ru" name="modal__form">
-          <input class="custom-input custom-input--name" type="text" placeholder="Имя" required>
-          <input class="custom-input custom-input--phone" type="tel" placeholder="Телефон" required pattern="2-[0-9]{3}-[0-9]{3}">
-          <textarea class="custom-textarea" placeholder="Ваш вопрос"></textarea>
+          <input class="custom-input custom-input--name" name="name" type="text" placeholder="Имя" required>
+          <input class="custom-input custom-input--phone" name="phone" type="tel" placeholder="Телефон" required pattern="[0-9]{,10}">
+          <textarea class="custom-textarea" name="message" placeholder="Ваш вопрос"></textarea>
 
           <button class="btn btn--dark btn--fz-16 modal__btn" type="submit">Отправить</button>
           <div class="custom-toggle custom-toggle--checkbox">

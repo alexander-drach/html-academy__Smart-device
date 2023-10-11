@@ -1,5 +1,6 @@
-.custom-input,
-.custom-textarea {
+input[type="text"],
+input[type="tel"],
+textarea {
   width: 100%;
 
   position: relative;
@@ -19,7 +20,8 @@
   }
 }
 
-.custom-input {
+input[type="text"],
+input[type="tel"] {
   padding: 15px;
 }
 
