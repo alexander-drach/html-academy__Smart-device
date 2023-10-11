@@ -1437,7 +1437,7 @@ button,
   padding-top: 80px;
 }
 
-.conact__content {
+.contact__content {
   width: 50%;
   padding-left: 6px;
   padding-right: 9px;
@@ -1663,7 +1663,7 @@ button,
     padding-right: 40px;
   }
 
-  .conact__content {
+  .contact__content {
     width: 65%;
   }
 }
@@ -1843,7 +1843,7 @@ button,
     display: none;
   }
 
-  .conact__content {
+  .contact__content {
     width: 100%;
     padding-left: 1px;
     padding-right: 0;
