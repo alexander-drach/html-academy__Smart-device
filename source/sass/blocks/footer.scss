@@ -100,13 +100,6 @@
   }
 }
 
-.footer__block {
-  @include vp-767 {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
 .footer__address {
   font-style: normal;
   font-size: 16px;

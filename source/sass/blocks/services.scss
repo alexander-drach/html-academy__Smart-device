@@ -120,8 +120,8 @@
 
     width: 60px;
     height: 60px;
-    background: url("../img/sprite.svg#icon-card") no-repeat;
-    background-size: 60px 60px;
+    background-image: url("../img/svg/icon-card.svg");
+    background-size: cover;
 
     z-index: 2;
 
