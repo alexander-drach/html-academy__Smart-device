@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {accordeon} from './modules/accordeon/accordeon';
 import {showFullTextAbout} from './modules/about/show-full-text-about';
+import {initAccordions} from './modules/accordions/init-accordion';
 
 // ---------------------------------
 
@@ -12,8 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  accordeon();
   showFullTextAbout();
+  initAccordions();
 
   // Modules
   // ---------------------------------
