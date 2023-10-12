@@ -56,14 +56,18 @@
 .services__item {
   position: relative;
   width: calc(100% / 3 - 84px);
+  min-height: 650px;
 
   margin-left: 42px;
   margin-right: 42px;
 
   background-color: $color-primary-black-opacity;
 
+  overflow: hidden;
+
   @include vp-1023 {
-    width: max-content;
+    width: 100%;
+    min-height: 250px;
 
     margin-bottom: 30px;
   }
@@ -159,5 +163,18 @@
 }
 
 .services__thumb {
-  object-fit: fill;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+  height: 100%;
+  object-fit: contain;
+
+  @include vp-1023 {
+    height: auto;
+    width: 100%;
+  }
+
+  @include vp-767 {
+  }
 }

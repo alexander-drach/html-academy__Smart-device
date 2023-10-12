@@ -694,6 +694,8 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .accordion__element {
@@ -1121,6 +1123,12 @@ textarea {
   flex-shrink: 0;
 }
 
+.footer__block--menu {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .footer__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
@@ -1418,9 +1426,11 @@ textarea {
 .services__item {
   position: relative;
   width: calc(33.3333333333% - 84px);
+  min-height: 650px;
   margin-left: 42px;
   margin-right: 42px;
   background-color: rgba(4, 24, 39, 0.5);
+  overflow: hidden;
 }
 
 .services__link {
@@ -1474,8 +1484,13 @@ textarea {
 }
 
 .services__thumb {
-  -o-object-fit: fill;
-  object-fit: fill;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .contact {
@@ -1716,7 +1731,6 @@ h2 span:last-child {
   }
 
   .main-menu__col {
-    width: 200px;
     margin-right: 10px;
   }
 }
@@ -1733,8 +1747,12 @@ h2 span:last-child {
 }
 
 @media (max-width: 1023px) {
+  .accordion__header {
+    margin-bottom: 21px;
+  }
+
   .accordion__element--menu {
-    width: calc(50% - 30px);
+    width: calc(52% - 30px);
     padding-top: 0;
     margin-top: 0;
     margin-left: 0;
@@ -1802,6 +1820,10 @@ h2 span:last-child {
     margin-bottom: 21px;
   }
 
+  .footer__address {
+    margin-bottom: 7px;
+  }
+
   .intro {
     padding-top: 180px;
     padding-bottom: 206px;
@@ -1839,11 +1861,11 @@ h2 span:last-child {
   }
 
   .features__icon {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
   }
 
   .features__title {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .about {
@@ -1878,15 +1900,19 @@ h2 span:last-child {
   }
 
   .services__item {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: 100%;
+    min-height: 250px;
     margin-bottom: 30px;
   }
 
   .services__title {
     left: 45px;
     top: 36px;
+  }
+
+  .services__thumb {
+    height: auto;
+    width: 100%;
   }
 
   .contact {

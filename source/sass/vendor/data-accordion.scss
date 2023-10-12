@@ -17,6 +17,10 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  @include vp-1023 {
+    margin-bottom: 21px;
+  }
 }
 
 .accordion__button {
@@ -61,6 +65,7 @@
 
 .accordion__inner {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .accordion__element {
@@ -71,7 +76,7 @@
   margin-right: 30px;
 
   @include vp-1023 {
-    width: calc(50% - 30px);
+    width: calc(52% - 30px);
     padding-top: 0;
     margin-top: 0;
     margin-left: 0;
