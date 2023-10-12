@@ -833,11 +833,11 @@ button,
   margin-bottom: 0;
 }
 
-.modal .custom-input {
+.modal .modal__group--input {
   margin-bottom: 20px;
 }
 
-.modal textarea {
+.modal .modal__group--textarea {
   margin-bottom: 20px;
 }
 
@@ -1443,7 +1443,7 @@ textarea {
   margin-bottom: 0;
 }
 
-.contact__form {
+.contact form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1454,19 +1454,19 @@ textarea {
   align-items: flex-end;
 }
 
-.contact__form input {
+.contact__form .contact__group--input {
   margin-bottom: 20px;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.contact__form textarea {
+.contact__form .contact__group--textarea {
   width: 100%;
   margin-bottom: 35px;
 }
 
-.contact__form input[name=name] {
+.contact__form .contact__group--name {
   margin-right: 30px;
 }
 
@@ -2112,18 +2112,18 @@ h2 span:last-child {
     margin-bottom: 35px;
   }
 
-  .contact__form input {
+  .contact__form .contact__group--input {
     -webkit-box-flex: 100%;
     -ms-flex: 100%;
     flex: 100%;
     margin-bottom: 21px;
   }
 
-  .contact__form textarea {
+  .contact__form .contact__group--textarea {
     margin-bottom: 29px;
   }
 
-  .contact__form input[name=name] {
+  .contact__form .contact__group--name {
     margin-right: 0;
   }
 

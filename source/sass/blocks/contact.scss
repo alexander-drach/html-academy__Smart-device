@@ -94,13 +94,13 @@
   }
 }
 
-.contact__form {
+.contact form {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
 }
 
-.contact__form input {
+.contact__form .contact__group--input {
   margin-bottom: 20px;
   flex: 1;
 
@@ -111,7 +111,7 @@
   }
 }
 
-.contact__form textarea {
+.contact__form .contact__group--textarea {
   width: 100%;
 
   margin-bottom: 35px;
@@ -121,7 +121,7 @@
   }
 }
 
-.contact__form input[name="name"] {
+.contact__form .contact__group--name {
   margin-right: 30px;
 
   @include vp-767 {
