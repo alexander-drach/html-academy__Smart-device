@@ -1,6 +1,6 @@
 .contact {
   padding-top: 165px;
-  padding-bottom: 250px;
+  padding-bottom: 225px;
   background: linear-gradient(139deg, rgb(2, 101, 147) 33.5%, rgb(0, 178, 255) 33.5%);
 
   color: $color-default-white;
@@ -9,7 +9,7 @@
     background: $color-primary-blue;
 
     padding-top: 46px;
-    padding-bottom: 123px;
+    padding-bottom: 98px;
   }
 
   @include vp-767 {
@@ -117,7 +117,7 @@
   margin-bottom: 30px;
 
   @include vp-767 {
-    margin-bottom: 29px;
+    margin-bottom: 26px;
   }
 }
 
@@ -158,7 +158,7 @@
   margin-bottom: 24px;
 
   @include vp-1023 {
-    margin-bottom: 22px;
+    margin-bottom: 32px;
   }
 
   @include vp-767 {
