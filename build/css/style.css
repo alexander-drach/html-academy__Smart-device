@@ -1772,7 +1772,7 @@ h2 span:last-child {
   background-color: #041427;
   color: #ffffff;
   padding-top: 66px;
-  padding-bottom: 142px;
+  padding-bottom: 112px;
 }
 @media (max-width: 1023px) {
   .services {
@@ -1837,12 +1837,12 @@ h2 span:last-child {
   margin-right: 42px;
   background-color: rgba(4, 24, 39, 0.5);
   overflow: hidden;
+  margin-bottom: 30px;
 }
 @media (max-width: 1023px) {
   .services__item {
     width: 100%;
     min-height: 250px;
-    margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -2094,6 +2094,7 @@ h2 span:last-child {
   min-width: 268px;
   padding: 15px 25px 11px 25px;
   margin-right: 50px;
+  margin-bottom: 24px;
 }
 @media (max-width: 1023px) {
   .contact__btn {
@@ -2106,7 +2107,6 @@ h2 span:last-child {
   .contact__btn {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 24px;
   }
 }
 

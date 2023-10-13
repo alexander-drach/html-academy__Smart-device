@@ -134,6 +134,7 @@
 
   padding: 15px 25px 11px 25px;
   margin-right: 50px;
+  margin-bottom: 24px;
 
   @include vp-1023 {
     min-width: 265px;
@@ -146,7 +147,6 @@
     width: 100%;
 
     margin-right: 0;
-    margin-bottom: 24px;
   }
 }
 

@@ -4,7 +4,7 @@
   color: $color-default-white;
 
   padding-top: 66px;
-  padding-bottom: 142px;
+  padding-bottom: 112px;
 
   @include vp-1023 {
     padding-top: 58px;
@@ -65,11 +65,11 @@
 
   overflow: hidden;
 
+  margin-bottom: 30px;
+
   @include vp-1023 {
     width: 100%;
     min-height: 250px;
-
-    margin-bottom: 30px;
   }
 
   @include vp-767 {
