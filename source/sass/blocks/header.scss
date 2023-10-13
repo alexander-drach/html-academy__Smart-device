@@ -29,6 +29,28 @@
   align-items: center;
 }
 
+.header__links {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  width: 100%;
+  max-width: 480px;
+
+  margin-right: 145px;
+
+  @include vp-1439 {
+    width: auto;
+
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  @include vp-1023 {
+    margin-left: 0;
+  }
+}
+
 .header__link {
   display: flex;
   align-items: center;
@@ -48,26 +70,7 @@
   }
 
   &--email {
-    min-width: 225px;
-
-    margin-right: 27px;
-
-    @include vp-1439 {
-      margin-left: auto;
-    }
-
-    @include vp-1023 {
-      margin-left: 0;
-      min-width: auto;
-    }
-  }
-
-  &--phone {
-    margin-right: 166px;
-
-    @include vp-1439 {
-      margin-right: auto;
-    }
+    margin-right: 121px;
   }
 
   @include vp-1023 {
