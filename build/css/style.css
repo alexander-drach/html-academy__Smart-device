@@ -1080,19 +1080,25 @@ h2 span:last-child {
 }
 
 .header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  width: 100%;
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   padding-top: 30px;
   padding-bottom: 35px;
+  z-index: 10;
+}
+@media (min-width: 1024px) {
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }
 @media (max-width: 1023px) {
   .header {
     padding-top: 20px;
+    margin-bottom: -30px;
   }
 }
 @media (max-width: 767px) {
