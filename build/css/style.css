@@ -1501,7 +1501,7 @@ h2 span:last-child {
   z-index: 2;
 }
 
-.services h2 {
+.services h3 {
   position: absolute;
   left: 40px;
   top: 49px;
@@ -1924,7 +1924,7 @@ h2 span:last-child {
     margin-bottom: 30px;
   }
 
-  .services h2 {
+  .services h3 {
     left: 45px;
     top: 36px;
   }
@@ -2214,7 +2214,7 @@ h2 span:last-child {
     height: 40px;
   }
 
-  .services h2 {
+  .services h3 {
     font-size: 18px;
     left: 30px;
     top: 25px;
