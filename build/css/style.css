@@ -1161,7 +1161,7 @@ h2 span:last-child {
   flex: 1;
 }
 
-.footer__title {
+.footer h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   font-style: normal;
