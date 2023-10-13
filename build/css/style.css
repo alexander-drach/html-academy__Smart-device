@@ -1225,7 +1225,7 @@ h2 span:last-child {
   z-index: 1;
 }
 
-.intro__title {
+.intro h1 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   font-style: normal;
@@ -1833,7 +1833,7 @@ h2 span:last-child {
     }
 }
 
-  .intro__title {
+  .intro h1 {
     font-size: 64px;
     letter-spacing: 4.48px;
     margin-bottom: 0;
@@ -2079,7 +2079,7 @@ h2 span:last-child {
     padding: 0 25px;
   }
 
-  .intro__title {
+  .intro h1 {
     font-size: 36px;
     letter-spacing: 2.52px;
     margin-bottom: 7px;
