@@ -74,7 +74,7 @@
   border: 1px solid $color-primary-blue;
   border-left: 5px solid $color-primary-blue;
 
-  .features__title,
+  .features h3,
   .features__desc {
     color: $color-primary-white;
   }
@@ -104,7 +104,7 @@
   }
 }
 
-.features__title {
+.features h3 {
   margin-top: 0;
   margin-bottom: 15px;
 

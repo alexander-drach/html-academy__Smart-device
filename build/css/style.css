@@ -1306,7 +1306,7 @@ h2 span:last-child {
   border-left: 5px solid #00b2ff;
 }
 
-.features__item:hover .features__title,
+.features__item:hover .features h3,
 .features__item:hover .features__desc {
   color: #f2f5f6;
 }
@@ -1324,7 +1324,7 @@ h2 span:last-child {
   transition: fill 0.3s ease;
 }
 
-.features__title {
+.features h3 {
   margin-top: 0;
   margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1861,7 +1861,7 @@ h2 span:last-child {
     margin-bottom: 10px;
   }
 
-  .features__title {
+  .features h3 {
     margin-bottom: 10px;
   }
 
@@ -2128,7 +2128,7 @@ h2 span:last-child {
     height: 30px;
   }
 
-  .features__title {
+  .features h3 {
     font-size: 20px;
     line-height: 140%;
     margin-bottom: 9px;
