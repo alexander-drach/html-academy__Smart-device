@@ -863,6 +863,10 @@ template {
   cursor: pointer;
 }
 
+.modal__close-btn.focus-visible:focus {
+  opacity: 0.8;
+}
+
 .modal--responsive .modal__content {
   width: 100%;
 }
@@ -945,6 +949,8 @@ template {
   background-color: rgba(4, 20, 39, 0.15);
   border: none;
   color: #f2f5f6;
+  -webkit-transition: outline 0.3s ease;
+  transition: outline 0.3s ease;
 }
 
 .form input[type=text]::-webkit-input-placeholder,
@@ -975,6 +981,12 @@ template {
 .form input[type=tel]::placeholder,
 .form textarea::placeholder {
   color: #ffffff;
+}
+
+.form input[type=text].focus-visible:focus,
+.form input[type=tel].focus-visible:focus,
+.form textarea.focus-visible:focus {
+  outline: 1px solid #026593;
 }
 
 .form input[type=text],
@@ -1014,6 +1026,8 @@ template {
   position: relative;
   padding-left: 25px;
   cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .custom-toggle--checkbox .custom-toggle__icon {
@@ -1035,6 +1049,14 @@ template {
   background-image: url("../img/sprite/icon-check.svg");
   background-size: 15px;
   background-position: center;
+}
+
+.custom-toggle.focus-visible:focus label {
+  color: rgba(4, 24, 39, 0.5);
+}
+
+.custom-toggle.focus-visible:focus .custom-toggle__icon {
+  border: 1px solid rgba(4, 24, 39, 0.5);
 }
 
 .section h2 {
@@ -2268,6 +2290,24 @@ h2 span:last-child {
     background-color: #00b2ff;
     color: #f2f5f6;
     border: 1px solid #00b2ff;
+  }
+
+  .modal__close-btn:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .form input[type=text]:hover:not(.focus-visible),
+  .form input[type=tel]:hover:not(.focus-visible),
+  .form textarea:hover:not(.focus-visible) {
+    outline: 1px solid #026593;
+  }
+
+  .custom-toggle:hover:not(.focus-visible) label {
+    color: rgba(4, 24, 39, 0.5);
+  }
+
+  .custom-toggle:hover:not(.focus-visible) .custom-toggle__icon {
+    border: 1px solid rgba(4, 24, 39, 0.5);
   }
 
   .header__link:hover:not(.focus-visible) {

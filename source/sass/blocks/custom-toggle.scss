@@ -24,6 +24,8 @@
     padding-left: 25px;
 
     cursor: pointer;
+
+    transition: color $trans-default;
   }
 
   &--checkbox {
@@ -48,5 +50,15 @@
     background-image: url("../img/sprite/icon-check.svg");
     background-size: 15px;
     background-position: center;
+  }
+
+  @include hover-focus {
+    label {
+      color: $color-primary-black-opacity;
+    }
+
+    .custom-toggle__icon {
+      border: 1px solid $color-primary-black-opacity;
+    }
   }
 }

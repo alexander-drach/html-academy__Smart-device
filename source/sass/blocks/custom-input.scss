@@ -15,8 +15,14 @@
 
   color: $color-primary-white;
 
+  transition: outline $trans-default;
+
   &::placeholder {
     color: $color-default-white;
+  }
+
+  @include hover-focus {
+    outline: 1px solid $color-blue-darker;
   }
 }
 

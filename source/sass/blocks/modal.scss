@@ -78,6 +78,10 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
   }
 
   &--responsive {
