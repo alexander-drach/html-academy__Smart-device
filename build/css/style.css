@@ -1645,7 +1645,7 @@ h2 span:last-child {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 150px;
+  max-width: 175px;
   margin-top: 30px;
   margin-left: 10px;
 }
@@ -2030,7 +2030,7 @@ h2 span:last-child {
   }
 
   .contact .custom-toggle {
-    margin-bottom: 6px;
+    margin-bottom: 22px;
   }
 
   .logo--header {
