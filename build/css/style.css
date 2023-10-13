@@ -1619,6 +1619,7 @@ h2 span:last-child {
 .contact .custom-toggle {
   position: relative;
   max-width: 234px;
+  margin-bottom: 24px;
 }
 
 .logo {
