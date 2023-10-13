@@ -2323,7 +2323,7 @@ h2 span:last-child {
   }
 
   .contact {
-    padding-bottom: 86px;
+    padding-bottom: 90px;
   }
 
   .contact h2 {
@@ -2354,6 +2354,7 @@ h2 span:last-child {
   .contact__btn {
     width: 100%;
     margin-right: 0;
+    margin-bottom: 22px;
   }
 
   .contact .custom-toggle {
@@ -2366,7 +2367,7 @@ h2 span:last-child {
   }
 
   .social {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .main-menu__col {
