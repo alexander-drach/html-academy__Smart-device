@@ -1365,7 +1365,7 @@ h2 span:last-child {
 }
 @media (max-width: 1023px) {
   .intro {
-    padding-top: 180px;
+    padding-top: 99px;
     padding-bottom: 206px;
     background-image: url("../img/bg/bg-hero-tablet.png");
   }
