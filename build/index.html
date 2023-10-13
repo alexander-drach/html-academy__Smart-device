@@ -219,11 +219,11 @@
               </div>
               <div class="contact__form form" data-form-validate data-callback="base" data-parent-validate="base">
                 <form method="post" action="https://echo.htmlacademy.ru" name="contactform">
-                  <div class="contact__group contact__group--input contact__group--name" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
+                  <div class="custom-input modal__group contact__group--input contact__group--name" data-validate-type="text" data-limitation="name" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                     <label class="visually-hidden" for="name">Имя</label>
-                    <input id="name" name="name" type="text" placeholder="Имя" required>
+                    <input id="name" name="name" type="text" placeholder="Имя" required minlength="2">
                   </div>
-                  <div class="contact__group contact__group--input  contact__group--phone" data-validate-type="phone" data-on-input-validate data-required>
+                  <div class="custom-input contact__group contact__group--input  contact__group--phone" data-validate-type="phone" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                     <label class="visually-hidden" for="tel">Телефон</label>
                     <input id="tel" name="tel" type="tel" placeholder="Телефон">
                   </div>
@@ -232,8 +232,8 @@
                     <textarea id="message" name="message" placeholder="Ваш вопрос"></textarea>
                   </div>
                   <button class="btn btn--dark btn--fz-16 contact__btn" type="submit">Задать вопрос</button>
-                  <div class="custom-toggle custom-toggle--checkbox">
-                    <input id="contact-agree" type="checkbox" name="agree">
+                  <div class="custom-input custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
+                    <input id="contact-agree" type="checkbox" name="agree" required>
                     <span class="custom-toggle__icon"></span>
                     <label for="contact-agree">Я согласен на обработку персональных данных</label>
                   </div>
@@ -351,11 +351,11 @@
         </div>
         <div class="modal__form form" data-form-validate data-callback="base" data-parent-validate="base">
           <form method="post" action="https://echo.htmlacademy.ru" name="modalform">
-            <div class="modal__group modal__group--input modal__group--name" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
+            <div class="custom-input modal__group modal__group--input modal__group--name" data-validate-type="text" data-limitation="name" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
               <label class="visually-hidden" for="modalname">Имя</label>
-              <input id="modalname" name="modalname" type="text" placeholder="Имя" required autofocus>
+              <input id="modalname" name="modalname" type="text" placeholder="Имя" required autofocus minlength="2">
             </div>
-            <div class="modal__group modal__group--input  modal__group--phone" data-validate-type="phone" data-on-input-validate data-required>
+            <div class="custom-input modal__group modal__group--input  modal__group--phone" data-validate-type="phone" data-on-input-validate data-required data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
               <label class="visually-hidden" for="modaltel">Телефон</label>
               <input id="modaltel" name="modaltel" type="tel" placeholder="Телефон">
             </div>
@@ -364,8 +364,8 @@
               <textarea id="modalmessage" name="modalmessage" placeholder="Ваш вопрос"></textarea>
             </div>
             <button class="btn btn--dark btn--fz-16 modal__btn" type="submit">Задать вопрос</button>
-            <div class="custom-toggle custom-toggle--checkbox">
-              <input id="modal-agree" type="checkbox" name="moadlagree">
+            <div class="custom-input custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
+              <input id="modal-agree" type="checkbox" name="moadlagree" required>
               <span class="custom-toggle__icon"></span>
               <label for="modal-agree">Я согласен на обработку персональных данных</label>
             </div>
