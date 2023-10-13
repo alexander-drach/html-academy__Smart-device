@@ -60,6 +60,7 @@
   font-weight: 400;
   line-height: normal;
   color: $color-primary-white;
+  white-space: nowrap;
 
   transition: color $trans-default;
 
@@ -71,6 +72,10 @@
 
   &--email {
     margin-right: 121px;
+  }
+
+  &--phone {
+    margin-right: 10px;
   }
 
   @include vp-1023 {

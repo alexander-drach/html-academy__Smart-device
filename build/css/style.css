@@ -1155,6 +1155,7 @@ h2 span:last-child {
   font-weight: 400;
   line-height: normal;
   color: #f2f5f6;
+  white-space: nowrap;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   margin-bottom: 7px;
@@ -1169,6 +1170,9 @@ h2 span:last-child {
 }
 .header__link--email {
   margin-right: 121px;
+}
+.header__link--phone {
+  margin-right: 10px;
 }
 @media (max-width: 1023px) {
   .header__link {
