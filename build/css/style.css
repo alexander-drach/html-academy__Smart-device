@@ -2071,6 +2071,10 @@ h2 span:last-child {
   .main-menu {
     display: block;
   }
+
+  .main-menu__col:first-child {
+    margin-bottom: 8px;
+  }
 }
 
 @media (max-width: 767px) {
